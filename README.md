@@ -11,7 +11,7 @@ Works on any JavaScript supported browser
 
 Download the JS file and link  to your html page.
 ``` html
-<script src="director7/typewrite.js"></script>
+<script src="directory/typewrite.js"></script>
 ```
 
 # Usage
