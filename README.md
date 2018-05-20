@@ -11,11 +11,11 @@ Works on any JavaScript supported browser
 
 Download the JS file and link  to your html page.
 ``` html
-<script src="director/typewrite.js"></script>
+<script src="director7/typewrite.js"></script>
 ```
 
 # Usage
-In your html file, add text to the element you want to put the text as JSON via <mark>data-set</mark> attribute. make sure you have set the <mark>data-period</mark> attribute as well and the **class** as <mark>typewrite</mark>
+In your html file, add text to the element you want to put the text as JSON via <span style='background:yellow;'>data-set</span> attribute. make sure you have set the <span style='background:yellow;'>data-period</span> attribute as well and the **class** as <span style='background:yellow;'>typewrite</span>
   
 ``` html
 <h2 class="typewrite" data-period='100' data-set='["Some text here.", "Another text here."]', data-loop = 'false' data-delay='3000'>
