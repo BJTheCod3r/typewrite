@@ -1,9 +1,8 @@
 /*
 Author: Bolaji Ajani
 File: Typewrite
-About: It will give text a typewriter effect. It is based on one of the solutions onhttps://css-tricks.com/snippets/css/typewriter-effect/
+About: It will give text a typewriter effect with blinking caret. It is based on one of the solutions on https://css-tricks.com/snippets/css/typewriter-effect/
 */
-
 
 var typeWrite = function(el, toRotate, period, delay = 1000, loop = 'true') {
         this.toRotate = toRotate;
@@ -36,7 +35,6 @@ var typeWrite = function(el, toRotate, period, delay = 1000, loop = 'true') {
         this.interval = this.delay;
         if(this.loop === 'false' && this.loopNum == (this.toRotate.length - 1)) {
           this.halt = 'stop';
-          alert(this.halt);
          }
         }
         else if (this.isDeleting && this.txt === '') {
@@ -68,7 +66,7 @@ var typeWrite = function(el, toRotate, period, delay = 1000, loop = 'true') {
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > span { border-right: 0.08em solid #fff}";
-        css.innerHTML += ' @keyframes typewrite { from{border-right-color: RGBA(255, 255, 255, 1);} to{border-right-color: RGBA(255, 255, 255, 0);}}';
+        css.innerHTML += ' @keyframes typewrite { from{border-right-color: #fff;} to{border-right-color: transparent;}}';
         css.innerHTML += ' .typewrite > span {animation-name: typewrite; animation-duration: 1s; animation-iteration-count: infinite;}';
         document.body.appendChild(css);
     };
